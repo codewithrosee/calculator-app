@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brand"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp16"
+        android:fontFamily="@font/gogh_bold"
+        android:text="@string/app_name"
+        android:textColor="@color/text_primary"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_user_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_app_name"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:fontFamily="@font/gogh_medium"
+        android:gravity="right"
+        android:textColor="@color/text_primary"
+        android:textSize="45sp"
+        tools:text="1+1" />
+
+    <TextView
+        android:id="@+id/tv_calculation_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_user_input"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:fontFamily="@font/gogh_medium"
+        android:gravity="right"
+        android:textColor="@color/text_primary"
+        android:textSize="35sp"
+        tools:text="2" />
+
+    <LinearLayout
+        android:id="@+id/layout_calculator_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/accent"
+        android:orientation="vertical"
+        android:padding="@dimen/dp16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_clear_all"
+                style="@style/CalculatorNumberStyle"
+                android:textSize="30sp"
+                android:text="@string/clear_all" />
+
+            <Button
+                android:id="@+id/btn_clear"
+                style="@style/CalculatorNumberStyle"
+                android:text="@string/clear" />
+
+            <Button
+                android:id="@+id/btn_percentage"
+                style="@style/CalculatorNumberStyle"
+                android:text="@string/percentage" />
+
+            <Button
+                android:id="@+id/btn_divide"
+                style="@style/CalculatorButtonStyle"
+                android:text="@string/divide" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_seven"
+                style="@style/CalculatorNumberStyle"
+                android:text="@string/seven" />
+
+            <Button
+                android:id="@+id/btn_eight"
+                style="@style/CalculatorNumberStyle"
+                android:text="@string/eight" />
+
+            <Button
+                android:id="@+id/btn_nine"
+                style="@style/CalculatorNumberStyle"
+                android:text="@string/nine" />
+
+            <Button
+                android:id="@+id/btn_multiply"
+                style="@style/CalculatorButtonStyle"
+                android:text="@string/multiply" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_four"
+                style="@style/CalculatorNumberStyle"
+                android:text="@string/four" />
+
+            <Button
+                android:id="@+id/btn_five"
+                style="@style/CalculatorNumberStyle"
+                android:text="@string/five" />
+
+            <Button
+                android:id="@+id/btn_six"
+                style="@style/CalculatorNumberStyle"
+                android:text="@string/six" />
+
+            <Button
+                android:id="@+id/btn_minus"
+                style="@style/CalculatorButtonStyle"
+                android:text="@string/subtract" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_one"
+                style="@style/CalculatorNumberStyle"
+                android:text="@string/one" />
+
+            <Button
+                android:id="@+id/btn_two"
+                style="@style/CalculatorNumberStyle"
+                android:text="@string/two" />
+
+            <Button
+                android:id="@+id/btn_three"
+                style="@style/CalculatorNumberStyle"
+                android:text="@string/three" />
+
+            <Button
+                android:id="@+id/btn_plus"
+                style="@style/CalculatorButtonStyle"
+                android:text="@string/add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_zero"
+                style="@style/CalculatorNumberStyle"
+                android:text="@string/zero" />
+
+            <Button
+                android:id="@+id/btn_double_zero"
+                style="@style/CalculatorNumberStyle"
+                android:text="@string/double_zero" />
+
+            <Button
+                android:id="@+id/btn_decimal"
+                style="@style/CalculatorNumberStyle"
+                android:text="@string/decimal" />
+
+            <Button
+                android:id="@+id/btn_equals"
+                style="@style/CalculatorButtonStyle"
+                android:backgroundTint="@color/button_secondary"
+                android:text="@string/equals"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
